@@ -1,16 +1,15 @@
 import { HeroBlock } from '@/components/hero-block'
-import { Button } from '@/components/ui/button'
 import componentsArray from '@/app/api/components.json'
-import { Example } from '@/components/examples/application-ui/Buttons/primary-buttons'
+import { SolidButtons } from '@/components/examples/application-ui/Buttons/solid-buttons'
 
 const buttonsArray = componentsArray.filter((e) => e.category === 'application/buttons')
 
 const Examples = [
   {
-    name: 'primary buttons',
-    htmlCode: <Example />,
+    name: 'solid buttons',
+    htmlCode: <SolidButtons />,
     reactCode: `${buttonsArray[0].files[0].content}`,
-    component: <Example />,
+    component: <SolidButtons />,
   },
 ]
 

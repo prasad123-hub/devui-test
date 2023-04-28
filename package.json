@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:components": "tsx --tsconfig scripts/tsconfig.json scripts/build-component.ts",
+    "build:application": "tsx --tsconfig scripts/tsconfig.json scripts/build-application.ts",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",

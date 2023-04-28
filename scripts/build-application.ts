@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path, { basename, dirname } from 'path'
 
-import { applicationUIComponents } from '@/config/components'
+import { applicationUIComponents } from '@/config/application-components'
 
 const payload = applicationUIComponents
   .map((component) => {
