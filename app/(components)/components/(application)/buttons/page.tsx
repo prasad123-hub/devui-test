@@ -1,15 +1,52 @@
 import { HeroBlock } from '@/components/hero-block'
-import componentsArray from '@/app/api/components.json'
-import { SolidButtons } from '@/components/examples/application-ui/Buttons/solid-buttons'
+import componentsArray from '@/app/api/application-components.json'
+import {
+  SolidButtons,
+  OutlinedButtons,
+  LeadingIconButtons,
+  TrailingIconButtons,
+  RoundedButtons,
+  IconButtons,
+} from '@/components/examples/application-ui/Buttons'
 
 const buttonsArray = componentsArray.filter((e) => e.category === 'application/buttons')
 
 const Examples = [
   {
-    name: 'solid buttons',
+    name: 'Solid Buttons',
     htmlCode: <SolidButtons />,
     reactCode: `${buttonsArray[0].files[0].content}`,
     component: <SolidButtons />,
+  },
+  {
+    name: 'Outlined Buttons',
+    htmlCode: <OutlinedButtons />,
+    reactCode: `${buttonsArray[0].files[1].content}`,
+    component: <OutlinedButtons />,
+  },
+  {
+    name: 'Buttons with Leading Icon',
+    htmlCode: <LeadingIconButtons />,
+    reactCode: `${buttonsArray[0].files[2].content}`,
+    component: <LeadingIconButtons />,
+  },
+  {
+    name: 'Buttons with Trailing Icon',
+    htmlCode: <TrailingIconButtons />,
+    reactCode: `${buttonsArray[0].files[3].content}`,
+    component: <TrailingIconButtons />,
+  },
+  {
+    name: 'Rounded Buttons',
+    htmlCode: <RoundedButtons />,
+    reactCode: `${buttonsArray[0].files[4].content}`,
+    component: <RoundedButtons />,
+  },
+  {
+    name: 'Icon Buttons',
+    htmlCode: <IconButtons />,
+    reactCode: `${buttonsArray[0].files[5].content}`,
+    component: <IconButtons />,
   },
 ]
 
@@ -20,19 +57,18 @@ export default async function Buttons() {
       <hr />
 
       <div className="py-8 lg:px-0">
-        <div>
-          {Examples.map((e) => (
+        {Examples.map((e) => (
+          <div key={e.name}>
             <HeroBlock
-              key={e.name}
               className="flex items-center justify-center space-x-2 py-10"
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
-              title="Primary Buttons"
+              title={e.name}
             >
               {e.component}
             </HeroBlock>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   )

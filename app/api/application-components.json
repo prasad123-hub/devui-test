@@ -1,0 +1,40 @@
+[
+  {
+    "component": "button",
+    "name": "Buttons",
+    "files": [
+      {
+        "name": "solid-buttons.tsx",
+        "dir": "components/examples/application-ui/buttons",
+        "content": "import * as React from 'react'\n\nexport function SolidButtons() {\n  return (\n    <div className=\"flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0\">\n      <button\n        type=\"button\"\n        className=\"rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black\"\n      >\n        Button text\n      </button>\n      <button\n        type=\"button\"\n        className=\"rounded-md bg-yellow-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600\"\n      >\n        Button text\n      </button>\n      <button\n        type=\"button\"\n        className=\"rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600\"\n      >\n        Button text\n      </button>\n      <button\n        type=\"button\"\n        className=\"rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600\"\n      >\n        Button text\n      </button>\n    </div>\n  )\n}\n"
+      },
+      {
+        "name": "outlined-buttons.tsx",
+        "dir": "components/examples/application-ui/buttons",
+        "content": "import * as React from 'react'\n\nexport function OutlinedButtons() {\n  return (\n    <div className=\"flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0\">\n      <button\n        type=\"button\"\n        className=\"rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black\"\n      >\n        Button text\n      </button>\n      <button\n        type=\"button\"\n        className=\"rounded-md border border-yellow-600 px-3 py-2 text-sm font-semibold text-yellow-600 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600\"\n      >\n        Button text\n      </button>\n      <button\n        type=\"button\"\n        className=\"rounded-md border border-red-600 px-3 py-2 text-sm font-semibold text-red-600 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600\"\n      >\n        Button text\n      </button>\n      <button\n        type=\"button\"\n        className=\"rounded-md border border-green-600 px-3 py-2 text-sm font-semibold text-green-600 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600\"\n      >\n        Button text\n      </button>\n    </div>\n  )\n}\n"
+      },
+      {
+        "name": "leading-icon-buttons.tsx",
+        "dir": "components/examples/application-ui/buttons",
+        "content": "import * as React from 'react'\nimport { ArrowLeft } from 'lucide-react'\n\nexport function LeadingIconButtons() {\n  return (\n    <button\n      type=\"button\"\n      className=\"inline-flex items-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white hover:bg-black/80\"\n    >\n      <ArrowLeft className=\"mr-2 h-4 w-4\" />\n      Button Text\n    </button>\n  )\n}\n"
+      },
+      {
+        "name": "trailing-icon-buttons.tsx",
+        "dir": "components/examples/application-ui/buttons",
+        "content": "import * as React from 'react'\nimport { ArrowRight } from 'lucide-react'\n\nexport function TrailingIconButtons() {\n  return (\n    <button\n      type=\"button\"\n      className=\"inline-flex items-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white hover:bg-black/80\"\n    >\n      Button Text\n      <ArrowRight className=\"ml-2 h-4 w-4\" />\n    </button>\n  )\n}\n"
+      },
+      {
+        "name": "rounded-buttons.tsx",
+        "dir": "components/examples/application-ui/buttons",
+        "content": "import * as React from 'react'\n\nexport function RoundedButtons() {\n  return (\n    <button\n      type=\"button\"\n      className=\"rounded-full bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black\"\n    >\n      Button text\n    </button>\n  )\n}\n"
+      },
+      {
+        "name": "icon-button.tsx",
+        "dir": "components/examples/application-ui/buttons",
+        "content": "import * as React from 'react'\nimport { Plus } from 'lucide-react'\n\nexport function IconButtons() {\n  return (\n    <button\n      type=\"button\"\n      className=\"rounded-full bg-black px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black\"\n    >\n      <Plus className=\"h-4 w-4\" />\n    </button>\n  )\n}\n"
+      }
+    ],
+    "category": "application/buttons",
+    "directory": "components/examples/application-ui/buttons"
+  }
+]

@@ -3,34 +3,24 @@ import path, { basename, dirname } from 'path'
 
 import { applicationUIComponents } from '@/config/application-components'
 
-const payload = applicationUIComponents
-  .map((component) => {
-    const files = component.files?.map((file) => {
-      const content = fs.readFileSync(path.join(process.cwd(), file), 'utf8')
-
-      return {
-        name: basename(file),
-        dir: dirname(file),
-        content,
-      }
-    })
+const payload = applicationUIComponents.map((component) => {
+  const files = component.files?.map((file) => {
+    const content = fs.readFileSync(path.join(process.cwd(), file), 'utf8')
 
     return {
-      ...component,
-      files,
+      name: basename(file),
+      dir: dirname(file),
+      content,
     }
-  })
-  .sort((a, b) => {
-    if (a.name < b.name) {
-      return -1
-    }
-    if (a.name > b.name) {
-      return 1
-    }
-    return 0
   })
 
+  return {
+    ...component,
+    files,
+  }
+})
+
 fs.writeFileSync(
-  path.join(process.cwd(), 'app/api/components.json'),
+  path.join(process.cwd(), 'app/api/application-components.json'),
   JSON.stringify(payload, null, 2)
 )
