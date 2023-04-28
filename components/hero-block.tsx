@@ -4,23 +4,21 @@ import * as React from 'react'
 import { Icons } from '@/components/icons'
 import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Button } from './ui/button'
-import { cn } from '@/lib/utils'
+import { cn, format } from '@/lib/utils'
 import { CodeEditor } from './code-editor'
 import { useCopyToClipboard } from '@/hooks/use-copy-to-clipboard'
+import { renderToStaticMarkup } from 'react-dom/server'
 
 interface HeroBlockProps {
   className?: string
   children?: React.ReactNode
-  htmlCode: string
+  htmlCode: JSX.Element
   reactCode: string
   title: string
 }
@@ -37,10 +35,13 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
     }, 2000)
   }, [hasCopied])
 
-  const copyToClipboard = React.useCallback((value: string) => {
-    copy(value)
-    setHasCopied(true)
-  }, [])
+  const copyToClipboard = React.useCallback(
+    (value: string) => {
+      copy(value)
+      setHasCopied(true)
+    },
+    [copy]
+  )
 
   return (
     <div className="my-8 md:my-12 lg:my-14">
@@ -96,7 +97,11 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
               <Icons.check className="h-4 w-4" />
             ) : (
               <Icons.copy
-                onClick={() => copyToClipboard(variant === 'html' ? htmlCode : reactCode)}
+                onClick={() =>
+                  copyToClipboard(
+                    variant === 'html' ? format(renderToStaticMarkup(htmlCode)) : reactCode
+                  )
+                }
                 className="h-4 w-4"
               />
             )}
@@ -107,7 +112,11 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
       <div className="mx-auto max-w-7xl">
         {previewMode && <PreviewCard className={className}>{children}</PreviewCard>}
         {!previewMode && (
-          <CodeEditor selectedFile={variant} htmlCode={htmlCode} reactCode={reactCode} />
+          <CodeEditor
+            selectedFile={variant}
+            htmlCode={format(renderToStaticMarkup(htmlCode))}
+            reactCode={reactCode}
+          />
         )}
       </div>
     </div>

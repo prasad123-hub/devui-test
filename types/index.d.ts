@@ -1,3 +1,5 @@
+declare module 'prettier-format'
+
 export type NavItem = {
   title: string
   href: string

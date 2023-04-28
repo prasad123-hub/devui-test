@@ -1,5 +1,18 @@
 import { HeroBlock } from '@/components/hero-block'
 import { Button } from '@/components/ui/button'
+import componentsArray from '@/app/api/components.json'
+import { Example } from '@/components/examples/application-ui/Buttons/primary-buttons'
+
+const buttonsArray = componentsArray.filter((e) => e.category === 'application/buttons')
+
+const Examples = [
+  {
+    name: 'primary buttons',
+    htmlCode: <Example />,
+    reactCode: `${buttonsArray[0].files[0].content}`,
+    component: <Example />,
+  },
+]
 
 export default async function Buttons() {
   return (
@@ -9,15 +22,17 @@ export default async function Buttons() {
 
       <div className="py-8 lg:px-0">
         <div>
-          <HeroBlock
-            className="flex items-center justify-center space-x-2 py-10"
-            htmlCode={`this is html5 code`}
-            reactCode={`this is jsx code`}
-            title="Primary Buttons"
-          >
-            <Button>Primary</Button>
-            <Button variant="secondary">Secondary</Button>
-          </HeroBlock>
+          {Examples.map((e) => (
+            <HeroBlock
+              key={e.name}
+              className="flex items-center justify-center space-x-2 py-10"
+              htmlCode={e.htmlCode}
+              reactCode={e.reactCode}
+              title="Primary Buttons"
+            >
+              {e.component}
+            </HeroBlock>
+          ))}
         </div>
       </div>
     </div>

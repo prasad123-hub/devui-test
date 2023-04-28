@@ -4,6 +4,8 @@ import CodeMirror from '@uiw/react-codemirror'
 import { EditorView } from '@codemirror/view'
 import { cn } from '@/lib/utils'
 import { Icons } from '@/components/icons'
+// import { format } from 'pretty-format'
+// import prettify from 'html-prettify'
 
 export const DEFAULT_BASE_SETUP = {
   foldGutter: false,
@@ -19,8 +21,8 @@ export const clsx = (...classNames: string[]) => classNames.filter(Boolean).join
 
 interface CodeEditorProps {
   selectedFile: string
-  htmlCode?: string
-  reactCode?: string
+  htmlCode: string
+  reactCode: string
 }
 
 export function CodeEditor({ selectedFile, htmlCode, reactCode }: CodeEditorProps) {
