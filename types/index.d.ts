@@ -24,3 +24,9 @@ export type Feature = {
   description: string
   icon: JSX.Element
 }
+
+export type ComponentData = {
+  title: string
+  img: string
+  href: string
+}

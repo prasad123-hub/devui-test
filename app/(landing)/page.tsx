@@ -55,7 +55,7 @@ export default async function IndexPage() {
       <hr className="w-full bg-black" />
       {/* OPENSOURCE */}
       <section aria-labelledby="open-source">
-        <div className="mx-auto flex flex-col items-start gap-4 px-6 py-8 md:py-12 lg:w-[52rem] lg:px-0 lg:py-24">
+        <div className="mx-auto flex flex-col items-start gap-4 px-6 py-8 md:py-12 lg:w-[52rem] lg:px-0">
           <Image
             src="/communication.svg"
             alt="Developers"
