@@ -125,5 +125,33 @@
     ],
     "category": "application/breadcrumbs",
     "directory": "components/examples/application-ui/Breadcrumbs"
+  },
+  {
+    "component": "card",
+    "name": "Cards",
+    "files": [
+      {
+        "name": "card-one.tsx",
+        "dir": "components/examples/application-ui/cards",
+        "content": "import React from 'react'\n\nexport function CardOne() {\n  return (\n    <div className=\"relative h-[400px] w-[300px] rounded-md\">\n      <img\n        src=\"https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60\"\n        alt=\"AirMax Pro\"\n        className=\"z-0 h-full w-full rounded-md object-cover\"\n      />\n      <div className=\"absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent\"></div>\n      <div className=\"absolute bottom-4 left-4 text-left\">\n        <h1 className=\"text-lg font-semibold text-white\">Delba</h1>\n        <p className=\"mt-2 text-sm text-gray-300\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?\n        </p>\n        <button className=\"mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white\">\n          View Profile &rarr;\n        </button>\n      </div>\n    </div>\n  )\n}\n"
+      },
+      {
+        "name": "card-two.tsx",
+        "dir": "components/examples/application-ui/cards",
+        "content": "import React from 'react'\n\nexport function CardTwo() {\n  return (\n    <div className=\"w-[300px] rounded-md border\">\n      <img\n        src=\"https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60\"\n        alt=\"Laptop\"\n        className=\"h-[200px] w-full rounded-md object-cover\"\n      />\n      <div className=\"p-4\">\n        <h1 className=\"text-lg font-semibold\">About Macbook</h1>\n        <p className=\"mt-3 text-sm text-gray-600\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?\n        </p>\n        <button\n          type=\"button\"\n          className=\"mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black\"\n        >\n          Read\n        </button>\n      </div>\n    </div>\n  )\n}\n"
+      },
+      {
+        "name": "card-three.tsx",
+        "dir": "components/examples/application-ui/cards",
+        "content": "import React from 'react'\nimport { ArrowUpRight } from 'lucide-react'\n\nexport function CardThree() {\n  return (\n    <div className=\"w-[300px] rounded-md border\">\n      <img\n        src=\"https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60\"\n        alt=\"Laptop\"\n        className=\"h-[200px] w-full rounded-t-md object-cover\"\n      />\n      <div className=\"p-4\">\n        <h1 className=\"inline-flex items-center text-lg font-semibold\">\n          About Macbook <ArrowUpRight className=\"ml-2 h-4 w-4\" />\n        </h1>\n        <p className=\"mt-3 text-sm text-gray-600\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?\n        </p>\n        <div className=\"mt-4\">\n          <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900\">\n            #Macbook\n          </span>\n          <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900\">\n            #Apple\n          </span>\n          <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900\">\n            #Laptop\n          </span>\n        </div>\n        <button\n          type=\"button\"\n          className=\"mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black\"\n        >\n          Read\n        </button>\n      </div>\n    </div>\n  )\n}\n"
+      },
+      {
+        "name": "card-four.tsx",
+        "dir": "components/examples/application-ui/cards",
+        "content": "import { ArrowUpRight } from 'lucide-react'\nimport React from 'react'\n\nexport function CardFour() {\n  return (\n    <div className=\"flex max-w-2xl flex-col items-center rounded-md border md:flex-row\">\n      <div className=\"h-full w-full md:h-[200px] md:w-[300px]\">\n        <img\n          src=\"https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60\"\n          alt=\"Laptop\"\n          className=\"h-full w-full rounded-md object-cover\"\n        />\n      </div>\n      <div>\n        <div className=\"p-4\">\n          <h1 className=\"inline-flex items-center text-lg font-semibold\">\n            About Macbook <ArrowUpRight className=\"ml-2 h-4 w-4\" />\n          </h1>\n          <p className=\"mt-3 text-sm text-gray-600\">\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?\n          </p>\n          <div className=\"mt-4\">\n            <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900\">\n              #Macbook\n            </span>\n            <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900\">\n              #Apple\n            </span>\n            <span className=\"mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900\">\n              #Laptop\n            </span>\n          </div>\n          <div className=\"mt-3 flex items-center space-x-2\">\n            <img\n              className=\"inline-block h-8 w-8 rounded-full\"\n              src=\"https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg\"\n              alt=\"Dan_Abromov\"\n            />\n            <span className=\"flex flex-col\">\n              <span className=\"text-[10px] font-medium text-gray-900\">Dan Abromov</span>\n              <span className=\"text-[8px] font-medium text-gray-500\">@dan_abromov</span>\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n"
+      }
+    ],
+    "category": "application/cards",
+    "directory": "components/examples/application-ui/Cards"
   }
 ]

@@ -50,4 +50,16 @@ export const applicationUIComponents = [
     category: 'application/breadcrumbs',
     directory: 'components/examples/application-ui/Breadcrumbs',
   },
+  {
+    component: 'card',
+    name: 'Cards',
+    files: [
+      'components/examples/application-ui/cards/card-one.tsx',
+      'components/examples/application-ui/cards/card-two.tsx',
+      'components/examples/application-ui/cards/card-three.tsx',
+      'components/examples/application-ui/cards/card-four.tsx',
+    ],
+    category: 'application/cards',
+    directory: 'components/examples/application-ui/Cards',
+  },
 ]

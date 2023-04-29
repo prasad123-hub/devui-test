@@ -45,9 +45,9 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
 
   return (
     <div className="my-8 md:my-12 lg:my-14">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col justify-between md:flex-row md:items-center">
         <div>
-          <h3 className="font-sans font-semibold">{title}</h3>
+          <h3 className="mb-4 font-sans font-semibold md:mb-0">{title}</h3>
         </div>
         <div className="flex items-center space-x-4">
           {/* Buttons */}
