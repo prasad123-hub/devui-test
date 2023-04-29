@@ -62,4 +62,29 @@ export const applicationUIComponents = [
     category: 'application/cards',
     directory: 'components/examples/application-ui/Cards',
   },
+  {
+    component: 'input',
+    name: 'Inputs',
+    files: [
+      'components/examples/application-ui/inputs/default-input.tsx',
+      'components/examples/application-ui/inputs/disabled-input.tsx',
+      'components/examples/application-ui/inputs/label-input.tsx',
+      'components/examples/application-ui/inputs/bottom-text-input.tsx',
+      'components/examples/application-ui/inputs/with-button-input.tsx',
+    ],
+    category: 'application/inputs',
+    directory: 'components/examples/application-ui/Inputs',
+  },
+  {
+    component: 'navbar',
+    name: 'Navbars',
+    files: [
+      'components/examples/application-ui/navbars/navbar-one.tsx',
+      'components/examples/application-ui/navbars/navbar-two.tsx',
+      'components/examples/application-ui/navbars/navbar-three.tsx',
+      'components/examples/application-ui/navbars/navbar-four.tsx',
+    ],
+    category: 'application/navbars',
+    directory: 'components/examples/application-ui/Navbars',
+  },
 ]
