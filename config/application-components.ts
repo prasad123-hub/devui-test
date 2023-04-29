@@ -38,4 +38,16 @@ export const applicationUIComponents = [
     category: 'application/banners',
     directory: 'components/examples/application-ui/banners',
   },
+  {
+    component: 'breadcrumb',
+    name: 'Breadcrumbs',
+    files: [
+      'components/examples/application-ui/breadcrumbs/breadcrumb-one.tsx',
+      'components/examples/application-ui/breadcrumbs/breadcrumb-two.tsx',
+      'components/examples/application-ui/breadcrumbs/breadcrumb-three.tsx',
+      'components/examples/application-ui/breadcrumbs/breadcrumb-four.tsx',
+    ],
+    category: 'application/breadcrumbs',
+    directory: 'components/examples/application-ui/Breadcrumbs',
+  },
 ]

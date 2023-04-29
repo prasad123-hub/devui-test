@@ -97,5 +97,33 @@
     ],
     "category": "application/banners",
     "directory": "components/examples/application-ui/banners"
+  },
+  {
+    "component": "breadcrumb",
+    "name": "Breadcrumbs",
+    "files": [
+      {
+        "name": "breadcrumb-one.tsx",
+        "dir": "components/examples/application-ui/breadcrumbs",
+        "content": "import React from 'react'\nimport { Home } from 'lucide-react'\n\nexport function BreadcrumbOne() {\n  return (\n    <nav className=\"flex\" aria-label=\"Breadcrumb\">\n      <ol className=\"inline-flex items-center space-x-1 md:space-x-3\">\n        <li className=\"inline-flex items-center\">\n          <a\n            href=\"#\"\n            className=\"ml-1 inline-flex text-sm font-medium text-gray-800 hover:underline md:ml-2\"\n          >\n            <Home className=\"mr-4 h-4 w-4\" />\n            Documentation\n          </a>\n        </li>\n        <li>\n          <div className=\"flex items-center\">\n            <span className=\"mx-2.5 text-gray-800 \">/</span>\n            <a href=\"#\" className=\"ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2\">\n              Application UI\n            </a>\n          </div>\n        </li>\n        <li aria-current=\"page\">\n          <div className=\"flex items-center\">\n            <span className=\"mx-2.5 text-gray-800 \">/</span>\n            <span className=\"ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2\">\n              Breadcrumbs\n            </span>\n          </div>\n        </li>\n      </ol>\n    </nav>\n  )\n}\n"
+      },
+      {
+        "name": "breadcrumb-two.tsx",
+        "dir": "components/examples/application-ui/breadcrumbs",
+        "content": "import React from 'react'\nimport { Home, ChevronRight } from 'lucide-react'\n\nexport function BreadcrumbTwo() {\n  return (\n    <nav className=\"flex\" aria-label=\"Breadcrumb\">\n      <ol className=\"inline-flex items-center space-x-1 md:space-x-3\">\n        <li className=\"inline-flex items-center\">\n          <a\n            href=\"#\"\n            className=\"ml-1 inline-flex text-sm font-medium text-gray-800 hover:underline md:ml-2\"\n          >\n            <Home className=\"mr-4 h-4 w-4\" />\n            Documentation\n          </a>\n        </li>\n        <li>\n          <div className=\"flex items-center\">\n            <ChevronRight className=\"h-4 w-4\" />\n            <a href=\"#\" className=\"ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2\">\n              Application UI\n            </a>\n          </div>\n        </li>\n        <li aria-current=\"page\">\n          <div className=\"flex items-center\">\n            <ChevronRight className=\"h-4 w-4\" />\n            <span className=\"ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2\">\n              Breadcrumbs\n            </span>\n          </div>\n        </li>\n      </ol>\n    </nav>\n  )\n}\n"
+      },
+      {
+        "name": "breadcrumb-three.tsx",
+        "dir": "components/examples/application-ui/breadcrumbs",
+        "content": "import React from 'react'\nimport { Home, Users, User } from 'lucide-react'\n\nexport function BreadcrumbThree() {\n  return (\n    <nav className=\"flex\" aria-label=\"Breadcrumb\">\n      <ol className=\"inline-flex items-center space-x-1 md:space-x-3\">\n        <li className=\"inline-flex items-center\">\n          <a\n            href=\"#\"\n            className=\"ml-1 inline-flex text-sm font-medium text-gray-800 hover:underline md:ml-2\"\n          >\n            <Home className=\"mr-4 h-4 w-4\" />\n            Documentation\n          </a>\n        </li>\n        <li>\n          <div className=\"flex items-center\">\n            <span className=\"mx-2.5 text-gray-800\">/</span>\n            <span className=\"mx-2.5 text-gray-800\">\n              <Users className=\"h-4 w-4\" />\n            </span>\n            <a href=\"#\" className=\"ml-1 text-sm font-medium text-gray-800 hover:underline\">\n              Users\n            </a>\n          </div>\n        </li>\n        <li aria-current=\"page\">\n          <div className=\"flex items-center\">\n            <span className=\"mx-2.5 text-gray-800\">/</span>\n            <span className=\"mx-2.5 text-gray-800\">\n              <User className=\"h-4 w-4\" />\n            </span>\n            <span className=\"ml-1 text-sm font-medium text-gray-800 hover:underline\">John Doe</span>\n          </div>\n        </li>\n      </ol>\n    </nav>\n  )\n}\n"
+      },
+      {
+        "name": "breadcrumb-four.tsx",
+        "dir": "components/examples/application-ui/breadcrumbs",
+        "content": "import React from 'react'\nimport { Home } from 'lucide-react'\n\nexport function BreadcrumbFour() {\n  return (\n    <nav className=\"flex w-full items-start rounded-md bg-gray-100 p-2\" aria-label=\"Breadcrumb\">\n      <ol className=\"inline-flex items-center space-x-1 md:space-x-3\">\n        <li className=\"inline-flex items-center\">\n          <a\n            href=\"#\"\n            className=\"ml-1 inline-flex text-sm font-medium text-gray-800 hover:underline md:ml-2\"\n          >\n            <Home className=\"mr-4 h-4 w-4\" />\n            Documentation\n          </a>\n        </li>\n        <li>\n          <div className=\"flex items-center\">\n            <span className=\"mx-2.5 text-gray-800 \">/</span>\n            <a href=\"#\" className=\"ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2\">\n              Application UI\n            </a>\n          </div>\n        </li>\n        <li aria-current=\"page\">\n          <div className=\"flex items-center\">\n            <span className=\"mx-2.5 text-gray-800 \">/</span>\n            <span className=\"ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2\">\n              Breadcrumbs\n            </span>\n          </div>\n        </li>\n      </ol>\n    </nav>\n  )\n}\n"
+      }
+    ],
+    "category": "application/breadcrumbs",
+    "directory": "components/examples/application-ui/Breadcrumbs"
   }
 ]
