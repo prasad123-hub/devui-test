@@ -1,6 +1,12 @@
 import { HeroBlock } from '@/components/hero-block'
 import componentsArray from '@/app/api/application-components.json'
-import { CircularAvatar } from '@/components/examples/application-ui/Avatars'
+import {
+  CircularAvatar,
+  CircularAvatarStack,
+  RoundedAvatar,
+  AvatarWithText,
+  CircularAvatarWithNotification,
+} from '@/components/examples/application-ui/Avatars'
 
 const avatarsArray = componentsArray.filter((e) => e.category === 'application/avatars')
 
@@ -10,6 +16,30 @@ const Examples = [
     htmlCode: <CircularAvatar />,
     reactCode: `${avatarsArray[0].files[0].content}`,
     component: <CircularAvatar />,
+  },
+  {
+    name: 'Rounded Avatar',
+    htmlCode: <RoundedAvatar />,
+    reactCode: `${avatarsArray[0].files[1].content}`,
+    component: <RoundedAvatar />,
+  },
+  {
+    name: 'Circular Avatar with Notification',
+    htmlCode: <CircularAvatarWithNotification />,
+    reactCode: `${avatarsArray[0].files[2].content}`,
+    component: <CircularAvatarWithNotification />,
+  },
+  {
+    name: 'Circular Avatar Stack',
+    htmlCode: <CircularAvatarStack />,
+    reactCode: `${avatarsArray[0].files[3].content}`,
+    component: <CircularAvatarStack />,
+  },
+  {
+    name: 'Avatar With Text',
+    htmlCode: <AvatarWithText />,
+    reactCode: `${avatarsArray[0].files[4].content}`,
+    component: <AvatarWithText />,
   },
 ]
 

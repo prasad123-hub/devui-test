@@ -1,1 +1,5 @@
 export * from './avatar-one'
+export * from './avatar-two'
+export * from './avatar-three'
+export * from './avatar-four'
+export * from './avatar-five'
