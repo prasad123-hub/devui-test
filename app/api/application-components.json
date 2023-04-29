@@ -36,5 +36,18 @@
     ],
     "category": "application/buttons",
     "directory": "components/examples/application-ui/buttons"
+  },
+  {
+    "component": "avatar",
+    "name": "Avatars",
+    "files": [
+      {
+        "name": "avatar-one.tsx",
+        "dir": "components/examples/application-ui/avatars",
+        "content": "import * as React from 'react'\n\nexport function CircularAvatar() {\n  return (\n    <div className=\"space-x-6\">\n      <img\n        className=\"inline-block h-6 w-6 rounded-full\"\n        src=\"https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg\"\n        alt=\"Dan_Abromov\"\n      />\n      <img\n        className=\"inline-block h-8 w-8 rounded-full\"\n        src=\"https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg\"\n        alt=\"Dan_Abromov\"\n      />\n      <img\n        className=\"inline-block h-10 w-10 rounded-full\"\n        src=\"https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg\"\n        alt=\"Dan_Abromov\"\n      />\n      <img\n        className=\"inline-block h-12 w-12 rounded-full\"\n        src=\"https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg\"\n        alt=\"Dan_Abromov\"\n      />\n      <img\n        className=\"inline-block h-14 w-14 rounded-full\"\n        src=\"https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg\"\n        alt=\"Dan_Abromov\"\n      />\n    </div>\n  )\n}\n"
+      }
+    ],
+    "category": "application/avatars",
+    "directory": "components/examples/application-ui/avatars"
   }
 ]

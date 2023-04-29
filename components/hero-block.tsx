@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Button } from './ui/button'
 import { cn, format } from '@/lib/utils'
-import { CodeEditor } from './code-editor'
+import { CodeEditor } from '@/components/code-editor'
 import { useCopyToClipboard } from '@/hooks/use-copy-to-clipboard'
 import { renderToStaticMarkup } from 'react-dom/server'
 
@@ -47,7 +47,7 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
     <div className="my-8 md:my-12 lg:my-14">
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="font-heading text-lg">{title}</h3>
+          <h3 className="font-sans font-semibold">{title}</h3>
         </div>
         <div className="flex items-center space-x-4">
           {/* Buttons */}
@@ -108,7 +108,6 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
           </div>
         </div>
       </div>
-
       <div className="mx-auto max-w-7xl">
         {previewMode && <PreviewCard className={className}>{children}</PreviewCard>}
         {!previewMode && (

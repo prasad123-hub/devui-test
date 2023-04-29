@@ -13,4 +13,11 @@ export const applicationUIComponents = [
     category: 'application/buttons',
     directory: 'components/examples/application-ui/buttons',
   },
+  {
+    component: 'avatar',
+    name: 'Avatars',
+    files: ['components/examples/application-ui/avatars/avatar-one.tsx'],
+    category: 'application/avatars',
+    directory: 'components/examples/application-ui/avatars',
+  },
 ]
