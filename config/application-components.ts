@@ -26,4 +26,16 @@ export const applicationUIComponents = [
     category: 'application/avatars',
     directory: 'components/examples/application-ui/avatars',
   },
+  {
+    component: 'banner',
+    name: 'Banners',
+    files: [
+      'components/examples/application-ui/banners/banner-one.tsx',
+      'components/examples/application-ui/banners/banner-two.tsx',
+      'components/examples/application-ui/banners/banner-three.tsx',
+      'components/examples/application-ui/banners/banner-four.tsx',
+    ],
+    category: 'application/banners',
+    directory: 'components/examples/application-ui/banners',
+  },
 ]
