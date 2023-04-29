@@ -98,4 +98,16 @@ export const applicationUIComponents = [
     category: 'application/pagination',
     directory: 'components/examples/application-ui/Pagination',
   },
+  {
+    component: 'sidebar',
+    name: 'Sidebars',
+    files: [
+      'components/examples/application-ui/sidebars/sidebar-one.tsx',
+      'components/examples/application-ui/sidebars/sidebar-two.tsx',
+      'components/examples/application-ui/sidebars/sidebar-three.tsx',
+      'components/examples/application-ui/sidebars/sidebar-four.tsx',
+    ],
+    category: 'application/sidebars',
+    directory: 'components/examples/application-ui/Sidebars',
+  },
 ]
