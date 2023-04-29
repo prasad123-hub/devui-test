@@ -1,42 +1,40 @@
 import { HeroBlock } from '@/components/hero-block'
 import componentsArray from '@/app/api/application-components.json'
-import {
-  NavbarOne,
-  NavbarTwo,
-  NavbarThree,
-  NavbarFour,
-} from '@/components/examples/application-ui/Navbars'
+import { ExampleNavbarOne } from '@/components/examples/application-ui/Navbars/navbar-one'
+import { ExampleNavbarTwo } from '@/components/examples/application-ui/Navbars/navbar-two'
+import { ExampleNavbarThree } from '@/components/examples/application-ui/Navbars/navbar-three'
+import { ExampleNavbarFour } from '@/components/examples/application-ui/Navbars/navbar-four'
 
 const navbarsArray = componentsArray.filter((e) => e.category === 'application/navbars')
 
 const Examples = [
   {
     name: 'Navbar Example One',
-    htmlCode: <NavbarOne />,
+    htmlCode: <ExampleNavbarOne />,
     reactCode: `${navbarsArray[0].files[0].content}`,
-    component: <NavbarOne />,
+    component: <ExampleNavbarOne />,
   },
   {
     name: 'Navbar Example Two',
-    htmlCode: <NavbarTwo />,
+    htmlCode: <ExampleNavbarTwo />,
     reactCode: `${navbarsArray[0].files[1].content}`,
-    component: <NavbarTwo />,
+    component: <ExampleNavbarTwo />,
   },
   {
     name: 'Navbar Example Three',
-    htmlCode: <NavbarThree />,
+    htmlCode: <ExampleNavbarThree />,
     reactCode: `${navbarsArray[0].files[2].content}`,
-    component: <NavbarThree />,
+    component: <ExampleNavbarThree />,
   },
   {
     name: 'Navbar Example Four',
-    htmlCode: <NavbarFour />,
+    htmlCode: <ExampleNavbarFour />,
     reactCode: `${navbarsArray[0].files[3].content}`,
-    component: <NavbarFour />,
+    component: <ExampleNavbarFour />,
   },
 ]
 
-export default async function Avatars() {
+export default async function Navbars() {
   return (
     <div className="mx-auto max-w-7xl px-10 py-8 md:py-12 lg:px-0 lg:py-14">
       <h3 className="pb-4 font-heading text-2xl font-bold">Application UI/Navbars</h3>

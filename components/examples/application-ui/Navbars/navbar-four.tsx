@@ -18,7 +18,7 @@ const menuItems = [
   },
 ]
 
-export function NavbarFour() {
+export function ExampleNavbarFour() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   const toggleMenu = () => {

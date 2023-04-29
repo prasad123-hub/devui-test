@@ -36,7 +36,7 @@ const Examples = [
   },
 ]
 
-export default async function Buttons() {
+export default async function Breadcrumbs() {
   return (
     <div className="mx-auto max-w-7xl px-10 py-8 md:py-12 lg:px-0 lg:py-14">
       <h3 className="pb-4 font-heading text-2xl font-bold">Application UI/Breadcrumbs</h3>

@@ -18,7 +18,7 @@ const menuItems = [
   },
 ]
 
-export function NavbarThree() {
+export function ExampleNavbarThree() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   const toggleMenu = () => {

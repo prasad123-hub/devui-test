@@ -87,4 +87,15 @@ export const applicationUIComponents = [
     category: 'application/navbars',
     directory: 'components/examples/application-ui/Navbars',
   },
+  {
+    component: 'pagination',
+    name: 'Paginations',
+    files: [
+      'components/examples/application-ui/pagination/pagination-one.tsx',
+      'components/examples/application-ui/pagination/pagination-two.tsx',
+      'components/examples/application-ui/pagination/pagination-three.tsx',
+    ],
+    category: 'application/pagination',
+    directory: 'components/examples/application-ui/Pagination',
+  },
 ]
