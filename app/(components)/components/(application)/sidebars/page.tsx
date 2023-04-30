@@ -36,9 +36,9 @@ const Examples = [
   },
 ]
 
-export default async function Pagination() {
+export default async function Sidebars() {
   return (
-    <div className="mx-auto max-w-7xl px-10 py-8 md:py-12 lg:px-0 lg:py-14">
+    <div className="mx-auto max-w-7xl px-3 py-8 md:py-12 lg:px-0 lg:py-14">
       <h3 className="pb-4 font-heading text-2xl font-bold">Application UI/Sidebars</h3>
       <hr />
       <div className="py-8 lg:px-0">

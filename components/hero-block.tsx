@@ -129,6 +129,8 @@ interface PreviewCardProps {
 
 const PreviewCard = ({ children, className }: PreviewCardProps) => {
   return (
-    <div className={cn('mt-4 min-h-min w-full rounded-md border px-4', className)}>{children}</div>
+    <div className={cn('mt-4 min-h-min w-full rounded-md border md:px-4', className)}>
+      {children}
+    </div>
   )
 }
