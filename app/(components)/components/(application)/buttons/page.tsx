@@ -8,45 +8,52 @@ import {
   RoundedButtons,
   IconButtons,
 } from '@/components/examples/application-ui/Buttons'
+import { ExampleProps } from '@/types'
 
 const buttonsArray = componentsArray.filter((e) => e.category === 'application/buttons')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Solid Buttons',
     htmlCode: <SolidButtons />,
     reactCode: `${buttonsArray[0].files[0].content}`,
     component: <SolidButtons />,
+    playLink: 'https://play.tailwindcss.com/57Qf5F30UT',
   },
   {
     name: 'Outlined Buttons',
     htmlCode: <OutlinedButtons />,
     reactCode: `${buttonsArray[0].files[1].content}`,
     component: <OutlinedButtons />,
+    playLink: 'https://play.tailwindcss.com/VpvKH8aUEo',
   },
   {
     name: 'Buttons with Leading Icon',
     htmlCode: <LeadingIconButtons />,
     reactCode: `${buttonsArray[0].files[2].content}`,
     component: <LeadingIconButtons />,
+    playLink: 'https://play.tailwindcss.com/2ixepPh1UP',
   },
   {
     name: 'Buttons with Trailing Icon',
     htmlCode: <TrailingIconButtons />,
     reactCode: `${buttonsArray[0].files[3].content}`,
     component: <TrailingIconButtons />,
+    playLink: 'https://play.tailwindcss.com/IPU4FqG1o3',
   },
   {
     name: 'Rounded Buttons',
     htmlCode: <RoundedButtons />,
     reactCode: `${buttonsArray[0].files[4].content}`,
     component: <RoundedButtons />,
+    playLink: 'https://play.tailwindcss.com/cv4rCQPkLO',
   },
   {
     name: 'Icon Buttons',
     htmlCode: <IconButtons />,
     reactCode: `${buttonsArray[0].files[5].content}`,
     component: <IconButtons />,
+    playLink: 'https://play.tailwindcss.com/EEnwJn7vOW',
   },
 ]
 
@@ -63,6 +70,7 @@ export default async function Buttons() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>

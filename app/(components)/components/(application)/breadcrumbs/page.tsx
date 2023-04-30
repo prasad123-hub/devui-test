@@ -6,33 +6,38 @@ import {
   BreadcrumbThree,
   BreadcrumbFour,
 } from '@/components/examples/application-ui/Breadcrumbs'
+import { ExampleProps } from '@/types'
 
 const breadcrumbsArray = componentsArray.filter((e) => e.category === 'application/breadcrumbs')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Simple',
     htmlCode: <BreadcrumbOne />,
     reactCode: `${breadcrumbsArray[0].files[0].content}`,
     component: <BreadcrumbOne />,
+    playLink: 'https://play.tailwindcss.com/B6l40bnoOe',
   },
   {
     name: 'With Arrow Icon',
     htmlCode: <BreadcrumbTwo />,
     reactCode: `${breadcrumbsArray[0].files[1].content}`,
     component: <BreadcrumbTwo />,
+    playLink: 'https://play.tailwindcss.com/ksD1AoT5J9',
   },
   {
     name: 'With Icons',
     htmlCode: <BreadcrumbThree />,
     reactCode: `${breadcrumbsArray[0].files[2].content}`,
     component: <BreadcrumbThree />,
+    playLink: 'https://play.tailwindcss.com/FfnLqZBrl1',
   },
   {
     name: 'Full Width',
     htmlCode: <BreadcrumbFour />,
     reactCode: `${breadcrumbsArray[0].files[3].content}`,
     component: <BreadcrumbFour />,
+    playLink: 'https://play.tailwindcss.com/D9mnCdeedg',
   },
 ]
 
@@ -49,6 +54,7 @@ export default async function Breadcrumbs() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>

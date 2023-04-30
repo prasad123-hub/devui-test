@@ -4,33 +4,38 @@ import { ExampleNavbarOne } from '@/components/examples/application-ui/Navbars/n
 import { ExampleNavbarTwo } from '@/components/examples/application-ui/Navbars/navbar-two'
 import { ExampleNavbarThree } from '@/components/examples/application-ui/Navbars/navbar-three'
 import { ExampleNavbarFour } from '@/components/examples/application-ui/Navbars/navbar-four'
+import { ExampleProps } from '@/types'
 
 const navbarsArray = componentsArray.filter((e) => e.category === 'application/navbars')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Navbar Example One',
     htmlCode: <ExampleNavbarOne />,
     reactCode: `${navbarsArray[0].files[0].content}`,
     component: <ExampleNavbarOne />,
+    playLink: 'https://play.tailwindcss.com/ruCoEfHPXv',
   },
   {
     name: 'Navbar Example Two',
     htmlCode: <ExampleNavbarTwo />,
     reactCode: `${navbarsArray[0].files[1].content}`,
     component: <ExampleNavbarTwo />,
+    playLink: 'https://play.tailwindcss.com/uRScYHSlid',
   },
   {
     name: 'Navbar Example Three',
     htmlCode: <ExampleNavbarThree />,
     reactCode: `${navbarsArray[0].files[2].content}`,
     component: <ExampleNavbarThree />,
+    playLink: 'https://play.tailwindcss.com/Re9dymPmaM',
   },
   {
     name: 'Navbar Example Four',
     htmlCode: <ExampleNavbarFour />,
     reactCode: `${navbarsArray[0].files[3].content}`,
     component: <ExampleNavbarFour />,
+    playLink: 'https://play.tailwindcss.com/CGlQi04Vu3',
   },
 ]
 
@@ -47,6 +52,7 @@ export default async function Navbars() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>

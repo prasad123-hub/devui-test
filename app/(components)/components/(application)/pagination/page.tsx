@@ -5,27 +5,31 @@ import {
   PaginationTwo,
   PaginationThree,
 } from '@/components/examples/application-ui/Pagination'
+import { ExampleProps } from '@/types'
 
 const paginationArray = componentsArray.filter((e) => e.category === 'application/pagination')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Pagination Example One',
     htmlCode: <PaginationOne />,
     reactCode: `${paginationArray[0].files[0].content}`,
     component: <PaginationOne />,
+    playLink: 'https://play.tailwindcss.com/VIXyxOial8',
   },
   {
     name: 'Pagination Example Two',
     htmlCode: <PaginationTwo />,
     reactCode: `${paginationArray[0].files[1].content}`,
     component: <PaginationTwo />,
+    playLink: 'https://play.tailwindcss.com/WTB58pwqFy',
   },
   {
     name: 'Pagination Example Three',
     htmlCode: <PaginationThree />,
     reactCode: `${paginationArray[0].files[2].content}`,
     component: <PaginationThree />,
+    playLink: 'https://play.tailwindcss.com/NCpb80AJ7W',
   },
 ]
 
@@ -42,6 +46,7 @@ export default async function Pagination() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>

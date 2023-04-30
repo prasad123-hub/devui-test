@@ -30,3 +30,11 @@ export type ComponentData = {
   img: string
   href: string
 }
+
+export type ExampleProps = {
+  name: string
+  htmlCode: JSX.Element
+  reactCode: string
+  component: JSX.Element
+  playLink: string
+}

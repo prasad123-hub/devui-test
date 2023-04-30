@@ -11,7 +11,7 @@ export function CardThree() {
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text-lg font-semibold">
-          About Macbook <ArrowUpRight className="ml-2 h-4 w-4" />
+          About Macbook &nbsp; <ArrowUpRight className="h-4 w-4" />
         </h1>
         <p className="mt-3 text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?

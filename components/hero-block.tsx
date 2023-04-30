@@ -22,9 +22,17 @@ interface HeroBlockProps {
   htmlCode: JSX.Element
   reactCode: string
   title: string
+  playLink: string
 }
 
-export function HeroBlock({ className, children, htmlCode, reactCode, title }: HeroBlockProps) {
+export function HeroBlock({
+  className,
+  children,
+  htmlCode,
+  reactCode,
+  title,
+  playLink,
+}: HeroBlockProps) {
   const [value, copy] = useCopyToClipboard()
   const [variant, setVariant] = React.useState('html')
   const [previewMode, setPreviewMode] = React.useState(true)
@@ -50,7 +58,7 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
         <div className="mb-4 flex flex-row items-center space-x-4 md:mb-0">
           <h3 className=" font-sans font-semibold md:mb-0">{title}</h3>
           <div>
-            <a href="https://play.tailwindcss.com/KknYeDQqfy" target="_blank" rel="noreferrer">
+            <a href={playLink} target="_blank" rel="noreferrer">
               <div className="flex max-w-max items-center rounded-md border px-3 py-2 md:space-x-3">
                 <p className="hidden text-sm font-semibold md:block">Open in</p>
                 <span className="">

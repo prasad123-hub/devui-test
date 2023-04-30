@@ -7,39 +7,45 @@ import {
   BottomTextInput,
   WithButtonInput,
 } from '@/components/examples/application-ui/Inputs'
+import { ExampleProps } from '@/types'
 
 const inputsArray = componentsArray.filter((e) => e.category === 'application/inputs')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Default Input',
     htmlCode: <DefaultInput />,
     reactCode: `${inputsArray[0].files[0].content}`,
     component: <DefaultInput />,
+    playLink: 'https://play.tailwindcss.com/XYfYEcdSCZ',
   },
   {
     name: 'Disabled Input',
     htmlCode: <DisabledInput />,
     reactCode: `${inputsArray[0].files[1].content}`,
     component: <DisabledInput />,
+    playLink: 'https://play.tailwindcss.com/I0KuVFpIcT',
   },
   {
     name: 'With Label Input',
     htmlCode: <LabelInput />,
     reactCode: `${inputsArray[0].files[2].content}`,
     component: <LabelInput />,
+    playLink: 'https://play.tailwindcss.com/LNsKsPOS7u',
   },
   {
     name: 'With Bottom text Input',
     htmlCode: <BottomTextInput />,
     reactCode: `${inputsArray[0].files[3].content}`,
     component: <BottomTextInput />,
+    playLink: 'https://play.tailwindcss.com/3WMzee9Fo2',
   },
   {
     name: 'With Button',
     htmlCode: <WithButtonInput />,
     reactCode: `${inputsArray[0].files[4].content}`,
     component: <WithButtonInput />,
+    playLink: 'https://play.tailwindcss.com/3QhszMmIki',
   },
 ]
 
@@ -56,6 +62,7 @@ export default async function Inputs() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>

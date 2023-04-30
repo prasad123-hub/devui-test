@@ -6,33 +6,38 @@ import {
   SignUpThree,
   SignUpFour,
 } from '@/components/examples/application-ui/SignUp'
+import { ExampleProps } from '@/types'
 
 const signupArray = componentsArray.filter((e) => e.category === 'application/signup')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Sign Up Example One',
     htmlCode: <SignUpOne />,
     reactCode: `${signupArray[0].files[0].content}`,
     component: <SignUpOne />,
+    playLink: 'https://play.tailwindcss.com/yyQuNTtYOz',
   },
   {
     name: 'Sign Up Example Two',
     htmlCode: <SignUpTwo />,
     reactCode: `${signupArray[0].files[1].content}`,
     component: <SignUpTwo />,
+    playLink: 'https://play.tailwindcss.com/lF9EeJwURJ',
   },
   {
     name: 'Sign Up Example Three',
     htmlCode: <SignUpThree />,
     reactCode: `${signupArray[0].files[2].content}`,
     component: <SignUpThree />,
+    playLink: 'https://play.tailwindcss.com/xz3wKj61MG',
   },
   {
     name: 'Sign Up Example Four',
     htmlCode: <SignUpFour />,
     reactCode: `${signupArray[0].files[3].content}`,
     component: <SignUpFour />,
+    playLink: 'https://play.tailwindcss.com/VUP4g4sUq0',
   },
 ]
 
@@ -49,6 +54,7 @@ export default async function SignUp() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>

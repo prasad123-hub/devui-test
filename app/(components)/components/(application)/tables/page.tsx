@@ -44,7 +44,13 @@ export default async function Tables() {
       <div className="py-8 lg:px-0">
         {Examples.map((e) => (
           <div key={e.name}>
-            <HeroBlock className="" htmlCode={e.htmlCode} reactCode={e.reactCode} title={e.name}>
+            <HeroBlock
+              className=""
+              htmlCode={e.htmlCode}
+              reactCode={e.reactCode}
+              title={e.name}
+              playLink=""
+            >
               {e.component}
             </HeroBlock>
           </div>

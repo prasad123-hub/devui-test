@@ -6,33 +6,38 @@ import {
   AlertBanner,
   WarningBanner,
 } from '@/components/examples/application-ui/Banners'
+import { ExampleProps } from '@/types'
 
 const bannersArray = componentsArray.filter((e) => e.category === 'application/banners')
 
-const Examples = [
+const Examples: ExampleProps[] = [
   {
     name: 'Info Banner',
     htmlCode: <InfoBanner />,
     reactCode: `${bannersArray[0].files[0].content}`,
     component: <InfoBanner />,
+    playLink: 'https://play.tailwindcss.com/RfKnqFFOtB',
   },
   {
     name: 'Success Banner',
     htmlCode: <SuccessBanner />,
     reactCode: `${bannersArray[0].files[1].content}`,
     component: <SuccessBanner />,
+    playLink: 'https://play.tailwindcss.com/KyvGkD1U7l',
   },
   {
     name: 'Alert Banner',
     htmlCode: <AlertBanner />,
     reactCode: `${bannersArray[0].files[2].content}`,
     component: <AlertBanner />,
+    playLink: 'https://play.tailwindcss.com/XCnpFqv0oX',
   },
   {
     name: 'Warning Banner',
     htmlCode: <WarningBanner />,
     reactCode: `${bannersArray[0].files[3].content}`,
     component: <WarningBanner />,
+    playLink: 'https://play.tailwindcss.com/hEhqYmzzip',
   },
 ]
 
@@ -49,6 +54,7 @@ export default async function Banners() {
               htmlCode={e.htmlCode}
               reactCode={e.reactCode}
               title={e.name}
+              playLink={e.playLink}
             >
               {e.component}
             </HeroBlock>
