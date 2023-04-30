@@ -57,3 +57,61 @@ export const applicationComponentData: ComponentData[] = [
     href: 'signup',
   },
 ]
+
+export const marketingComponentData: ComponentData[] = [
+  {
+    title: 'CTA',
+    img: '/files/marketing/cta.png',
+    href: 'cta',
+  },
+  {
+    title: 'Error',
+    img: '/files/marketing/error.png',
+    href: 'error',
+  },
+  {
+    title: 'FAQs',
+    img: '/files/marketing/faq.png',
+    href: 'faqs',
+  },
+  {
+    title: 'Feature',
+    img: '/files/marketing/features.png',
+    href: 'feature',
+  },
+  {
+    title: 'Footer',
+    img: '/files/marketing/footer.png',
+    href: 'footer',
+  },
+  {
+    title: 'Hero',
+    img: '/files/marketing/hero.png',
+    href: 'hero',
+  },
+  {
+    title: 'LogoCloud',
+    img: '/files/marketing/logoclouds.png',
+    href: 'logocloud',
+  },
+  {
+    title: 'Pricing',
+    img: '/files/marketing/pricing.png',
+    href: 'pricing',
+  },
+  {
+    title: 'Stats',
+    img: '/files/marketing/stats.png',
+    href: 'stats',
+  },
+  {
+    title: 'Team',
+    img: '/files/marketing/teams.png',
+    href: 'team',
+  },
+  {
+    title: 'Testimonial',
+    img: '/files/marketing/testimonials.png',
+    href: 'testimonial',
+  },
+]
