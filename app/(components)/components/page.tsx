@@ -4,6 +4,10 @@ import Link from 'next/link'
 
 import { applicationComponentData } from '@/config/data'
 
+export const Metadata = {
+  title: 'Components',
+}
+
 export default async function IndexPage() {
   return (
     <>
