@@ -110,4 +110,16 @@ export const applicationUIComponents = [
     category: 'application/sidebars',
     directory: 'components/examples/application-ui/Sidebars',
   },
+  {
+    component: 'signin',
+    name: 'SignIn',
+    files: [
+      'components/examples/application-ui/signin/signin-one.tsx',
+      'components/examples/application-ui/signin/signin-two.tsx',
+      'components/examples/application-ui/signin/signin-three.tsx',
+      'components/examples/application-ui/signin/signin-four.tsx',
+    ],
+    category: 'application/signin',
+    directory: 'components/examples/application-ui/SignIn',
+  },
 ]
