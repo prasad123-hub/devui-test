@@ -1,38 +1,38 @@
 import { HeroBlock } from '@/components/hero-block'
 import componentsArray from '@/app/api/application-components.json'
 import {
-  SidebarOne,
-  SidebarTwo,
-  SidebarThree,
-  SidebarFour,
-} from '@/components/examples/application-ui/Sidebars'
+  SignUpOne,
+  SignUpTwo,
+  SignUpThree,
+  SignUpFour,
+} from '@/components/examples/application-ui/SignUp'
 
-const sidebarsArray = componentsArray.filter((e) => e.category === 'application/sidebars')
+const signupArray = componentsArray.filter((e) => e.category === 'application/signup')
 
 const Examples = [
   {
-    name: 'Sidebar Example One',
-    htmlCode: <SidebarOne />,
-    reactCode: `${sidebarsArray[0].files[0].content}`,
-    component: <SidebarOne />,
+    name: 'Sign Up Example One',
+    htmlCode: <SignUpOne />,
+    reactCode: `${signupArray[0].files[0].content}`,
+    component: <SignUpOne />,
   },
   {
-    name: 'Sidebar Example Two',
-    htmlCode: <SidebarTwo />,
-    reactCode: `${sidebarsArray[0].files[1].content}`,
-    component: <SidebarTwo />,
+    name: 'Sign Up Example Two',
+    htmlCode: <SignUpTwo />,
+    reactCode: `${signupArray[0].files[1].content}`,
+    component: <SignUpTwo />,
   },
   {
-    name: 'Sidebar Example Three',
-    htmlCode: <SidebarThree />,
-    reactCode: `${sidebarsArray[0].files[2].content}`,
-    component: <SidebarThree />,
+    name: 'Sign Up Example Three',
+    htmlCode: <SignUpThree />,
+    reactCode: `${signupArray[0].files[2].content}`,
+    component: <SignUpThree />,
   },
   {
-    name: 'Sidebar Example Four',
-    htmlCode: <SidebarFour />,
-    reactCode: `${sidebarsArray[0].files[3].content}`,
-    component: <SidebarFour />,
+    name: 'Sign Up Example Four',
+    htmlCode: <SignUpFour />,
+    reactCode: `${signupArray[0].files[3].content}`,
+    component: <SignUpFour />,
   },
 ]
 
@@ -44,7 +44,12 @@ export default async function SignUp() {
       <div className="py-8 lg:px-0">
         {Examples.map((e) => (
           <div key={e.name}>
-            <HeroBlock className="" htmlCode={e.htmlCode} reactCode={e.reactCode} title={e.name}>
+            <HeroBlock
+              className="flex justify-center py-2"
+              htmlCode={e.htmlCode}
+              reactCode={e.reactCode}
+              title={e.name}
+            >
               {e.component}
             </HeroBlock>
           </div>

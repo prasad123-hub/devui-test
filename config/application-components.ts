@@ -122,4 +122,16 @@ export const applicationUIComponents = [
     category: 'application/signin',
     directory: 'components/examples/application-ui/SignIn',
   },
+  {
+    component: 'signup',
+    name: 'SignUp',
+    files: [
+      'components/examples/application-ui/signup/signup-one.tsx',
+      'components/examples/application-ui/signup/signup-two.tsx',
+      'components/examples/application-ui/signup/signup-three.tsx',
+      'components/examples/application-ui/signup/signup-four.tsx',
+    ],
+    category: 'application/signup',
+    directory: 'components/examples/application-ui/SignUp',
+  },
 ]
