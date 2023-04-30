@@ -90,11 +90,6 @@ export const marketingComponentData: ComponentData[] = [
     href: 'hero',
   },
   {
-    title: 'LogoCloud',
-    img: '/files/marketing/logoclouds.png',
-    href: 'logocloud',
-  },
-  {
     title: 'Pricing',
     img: '/files/marketing/pricing.png',
     href: 'pricing',
