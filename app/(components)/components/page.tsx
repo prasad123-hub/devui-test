@@ -47,7 +47,7 @@ export default async function IndexPage() {
         </div>
         <hr className="h-[2px] w-full bg-black" />
         {/* Marketing Components */}
-        <div className="flex flex-col md:py-12 lg:flex-row lg:space-x-10 lg:py-14">
+        <div className=" hidden flex-col md:py-12 lg:flex-row lg:space-x-10 lg:py-14">
           <div className="lg:w-[30%]">
             <Image src="/woman-with-a-gift.svg" height={100} width={250} alt="WomenWithLaptop" />
             <h1 className="mt-4 font-heading text-2xl font-bold md:text-3xl">
