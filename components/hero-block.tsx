@@ -1,6 +1,7 @@
 'use client'
 
 import * as React from 'react'
+import Image from 'next/image'
 import { Icons } from '@/components/icons'
 import {
   DropdownMenu,
@@ -46,8 +47,18 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
   return (
     <div className="my-8 md:my-12 lg:my-14">
       <div className="flex flex-col justify-between md:flex-row md:items-center">
-        <div>
-          <h3 className="mb-4 font-sans font-semibold md:mb-0">{title}</h3>
+        <div className="mb-4 flex flex-row items-center space-x-4 md:mb-0">
+          <h3 className=" font-sans font-semibold md:mb-0">{title}</h3>
+          <div>
+            <a href="https://play.tailwindcss.com/KknYeDQqfy" target="_blank" rel="noreferrer">
+              <div className="flex max-w-max items-center rounded-md border px-3 py-2 md:space-x-3">
+                <p className="hidden text-sm font-semibold md:block">Open in</p>
+                <span className="">
+                  <Image src="/play.svg" height={60} width={120} className="object-cover" alt="" />
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
         <div className="flex items-center space-x-4">
           {/* Buttons */}
@@ -81,7 +92,8 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline">
-                  {variant.toUpperCase()} <Icons.chevronDown className="ml-2 h-4 w-4" />
+                  <span className="capitalize">{variant}</span>{' '}
+                  <Icons.chevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-10" align="end">
@@ -92,7 +104,7 @@ export function HeroBlock({ className, children, htmlCode, reactCode, title }: H
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="ml-2 rounded-md p-2 hover:bg-gray-200">
+          <div className="rounded-md p-2 hover:bg-gray-200">
             {hasCopied ? (
               <Icons.check className="h-4 w-4" />
             ) : (

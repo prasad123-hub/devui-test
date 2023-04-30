@@ -5,6 +5,7 @@ import { MainNav } from '@/components/main-nav'
 import { landingConfig } from '@/config/landing'
 import { buttonVariants } from '@/components/ui/button'
 import { SiteFooter } from '@/components/site-footer'
+import { CommandMenu } from '@/components/command-search'
 
 interface LandingPageLayoutProps {
   children: React.ReactNode
@@ -17,12 +18,7 @@ export default async function LandingPageLayout({ children }: LandingPageLayoutP
         <div className="flex h-20 items-center justify-between py-6">
           <MainNav items={landingConfig.mainNav} />
           <nav>
-            <Link
-              href="/login"
-              className={cn(buttonVariants({ variant: 'secondary', size: 'sm' }), 'px-4')}
-            >
-              Get Started
-            </Link>
+            <CommandMenu />
           </nav>
         </div>
       </header>

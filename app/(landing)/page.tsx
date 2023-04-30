@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
 import { Feature } from '@/types'
+import Link from 'next/link'
 
 export default async function IndexPage() {
   return (
@@ -23,10 +24,12 @@ export default async function IndexPage() {
             <strong>TailwindCSS</strong>) designed to enhance your productivity as a developer{' '}
           </p>
           <div className="mt-2 flex space-x-2">
-            <Button variant={'default'} className="bg-black text-white">
-              View Components
-            </Button>
-            <Button variant={'outline'}>Github</Button>
+            <Link href="/components">
+              <Button variant={'default'} className="bg-black text-white">
+                View Components
+              </Button>
+            </Link>
+            {/* <Button variant={'outline'}>Github</Button> */}
           </div>
         </div>
       </section>
@@ -67,13 +70,13 @@ export default async function IndexPage() {
             Made by Developers for the Community
           </h1>
           <p className="max-w-[42rem] leading-normal text-slate-700 sm:text-xl sm:leading-8">
-            We are open sourcing this project very soon. Stay tuned for it.
+            Our library offers meticulously designed components, curated by developers, to
+            accelerate the creation of visually stunning and fully functional interfaces.
           </p>
           <div className="mt-2 flex space-x-2">
-            <Button variant={'outline'} className="cursor-not-allowed">
-              View Code &rarr;
-            </Button>
-            <p className="mt-2 text-sm font-semibold">Coming Soon</p>
+            <Link href="/components">
+              <Button variant={'outline'}>Start Building</Button>
+            </Link>
           </div>
         </div>
       </section>
