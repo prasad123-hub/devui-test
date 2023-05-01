@@ -47,4 +47,16 @@ export const marketingComponents = [
     category: 'marketing/feature',
     directory: 'components/examples/marketing/feature',
   },
+  {
+    component: 'footer',
+    name: 'Footer',
+    files: [
+      'components/examples/marketing/footer/footer-one.tsx',
+      'components/examples/marketing/footer/footer-two.tsx',
+      'components/examples/marketing/footer/footer-three.tsx',
+      'components/examples/marketing/footer/footer-four.tsx',
+    ],
+    category: 'marketing/footer',
+    directory: 'components/examples/marketing/footer',
+  },
 ]
