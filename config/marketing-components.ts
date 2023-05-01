@@ -23,4 +23,16 @@ export const marketingComponents = [
     category: 'marketing/error',
     directory: 'components/examples/marketing/error',
   },
+  {
+    component: 'faq',
+    name: 'FAQs',
+    files: [
+      'components/examples/marketing/faq/faq-one.tsx',
+      'components/examples/marketing/faq/faq-two.tsx',
+      'components/examples/marketing/faq/faq-three.tsx',
+      'components/examples/marketing/faq/faq-four.tsx',
+    ],
+    category: 'marketing/faq',
+    directory: 'components/examples/marketing/faq',
+  },
 ]

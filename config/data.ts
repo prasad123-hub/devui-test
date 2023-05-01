@@ -72,7 +72,7 @@ export const marketingComponentData: ComponentData[] = [
   {
     title: 'FAQs',
     img: '/files/marketing/faq.png',
-    href: 'faqs',
+    href: 'faq',
   },
   {
     title: 'Feature',
