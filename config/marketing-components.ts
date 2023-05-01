@@ -11,4 +11,16 @@ export const marketingComponents = [
     category: 'marketing/cta',
     directory: 'components/examples/marketing/cta',
   },
+  {
+    component: 'error',
+    name: 'Error',
+    files: [
+      'components/examples/marketing/error/error-one.tsx',
+      'components/examples/marketing/error/error-two.tsx',
+      'components/examples/marketing/error/error-three.tsx',
+      'components/examples/marketing/error/error-four.tsx',
+    ],
+    category: 'marketing/error',
+    directory: 'components/examples/marketing/error',
+  },
 ]
