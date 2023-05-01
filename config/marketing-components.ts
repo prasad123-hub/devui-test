@@ -35,4 +35,16 @@ export const marketingComponents = [
     category: 'marketing/faq',
     directory: 'components/examples/marketing/faq',
   },
+  {
+    component: 'feature',
+    name: 'Feature',
+    files: [
+      'components/examples/marketing/feature/feature-one.tsx',
+      'components/examples/marketing/feature/feature-two.tsx',
+      'components/examples/marketing/feature/feature-three.tsx',
+      'components/examples/marketing/feature/feature-four.tsx',
+    ],
+    category: 'marketing/feature',
+    directory: 'components/examples/marketing/feature',
+  },
 ]
