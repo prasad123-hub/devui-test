@@ -6,7 +6,7 @@ import { DialogProps } from '@radix-ui/react-alert-dialog'
 
 import { Circle, File, Laptop, Moon, SunMedium } from 'lucide-react'
 
-import { applicationComponentData } from '@/config/data'
+import { applicationComponentData, marketingComponentData } from '@/config/data'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import {
@@ -91,6 +91,19 @@ export function CommandMenu({ ...props }: DialogProps) {
             </CommandGroup>
           ))} */}
           <CommandSeparator />
+          <CommandGroup heading="Marketing Components">
+            {marketingComponentData.map((component) => (
+              <CommandItem
+                key={component.href}
+                onSelect={() => {
+                  runCommand(() => router.push(`/components/${component.href}` as string))
+                }}
+              >
+                <File className="mr-2 h-4 w-4" />
+                {component.title}
+              </CommandItem>
+            ))}
+          </CommandGroup>
           {/* <CommandGroup heading="Theme">
             <CommandItem onSelect={() => runCommand(() => setTheme("light"))}>
               <SunMedium className="mr-2 h-4 w-4" />
