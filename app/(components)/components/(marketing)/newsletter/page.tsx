@@ -41,7 +41,7 @@ const Examples: ExampleProps[] = [
   },
 ]
 
-export default async function Footers() {
+export default async function Newsletter() {
   return (
     <div className="mx-auto max-w-7xl px-3 py-8 md:py-12 lg:px-0 lg:py-14">
       <h3 className="pb-4 font-heading text-2xl font-bold">Marketing/Newsletters</h3>

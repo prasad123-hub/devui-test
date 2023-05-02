@@ -82,4 +82,15 @@ export const marketingComponents = [
     category: 'marketing/newsletter',
     directory: 'components/examples/marketing/newsletter',
   },
+  {
+    component: 'team',
+    name: 'Team',
+    files: [
+      'components/examples/marketing/team/team-one.tsx',
+      'components/examples/marketing/team/team-two.tsx',
+      'components/examples/marketing/team/team-three.tsx',
+    ],
+    category: 'marketing/team',
+    directory: 'components/examples/marketing/team',
+  },
 ]
