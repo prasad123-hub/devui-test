@@ -93,4 +93,15 @@ export const marketingComponents = [
     category: 'marketing/team',
     directory: 'components/examples/marketing/team',
   },
+  {
+    component: 'hero',
+    name: 'Hero',
+    files: [
+      'components/examples/marketing/hero/hero-one.tsx',
+      'components/examples/marketing/hero/hero-two.tsx',
+      'components/examples/marketing/hero/hero-three.tsx',
+    ],
+    category: 'marketing/hero',
+    directory: 'components/examples/marketing/hero',
+  },
 ]
