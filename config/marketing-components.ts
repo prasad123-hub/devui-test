@@ -59,4 +59,15 @@ export const marketingComponents = [
     category: 'marketing/footer',
     directory: 'components/examples/marketing/footer',
   },
+  {
+    component: 'testimonial',
+    name: 'Testmonials',
+    files: [
+      'components/examples/marketing/testimonial/testimonial-one.tsx',
+      'components/examples/marketing/testimonial/testimonial-two.tsx',
+      'components/examples/marketing/testimonial/testimonial-three.tsx',
+    ],
+    category: 'marketing/testimonial',
+    directory: 'components/examples/marketing/testimonial',
+  },
 ]
