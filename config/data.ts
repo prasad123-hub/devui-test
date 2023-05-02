@@ -90,6 +90,11 @@ export const marketingComponentData: ComponentData[] = [
     href: 'hero',
   },
   {
+    title: 'Newsletter',
+    img: '/files/marketing/newsletter.png',
+    href: 'newsletter',
+  },
+  {
     title: 'Pricing',
     img: '/files/marketing/pricing.png',
     href: 'pricing',

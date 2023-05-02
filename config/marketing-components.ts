@@ -70,4 +70,16 @@ export const marketingComponents = [
     category: 'marketing/testimonial',
     directory: 'components/examples/marketing/testimonial',
   },
+  {
+    component: 'newsletter',
+    name: 'Newsletter',
+    files: [
+      'components/examples/marketing/newsletter/newsletter-one.tsx',
+      'components/examples/marketing/newsletter/newsletter-two.tsx',
+      'components/examples/marketing/newsletter/newsletter-three.tsx',
+      'components/examples/marketing/newsletter/newsletter-four.tsx',
+    ],
+    category: 'marketing/newsletter',
+    directory: 'components/examples/marketing/newsletter',
+  },
 ]
