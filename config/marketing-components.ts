@@ -104,4 +104,15 @@ export const marketingComponents = [
     category: 'marketing/hero',
     directory: 'components/examples/marketing/hero',
   },
+  {
+    component: 'pricing',
+    name: 'Pricing',
+    files: [
+      'components/examples/marketing/pricing/pricing-one.tsx',
+      'components/examples/marketing/pricing/pricing-two.tsx',
+      'components/examples/marketing/pricing/pricing-three.tsx',
+    ],
+    category: 'marketing/pricing',
+    directory: 'components/examples/marketing/pricing',
+  },
 ]
