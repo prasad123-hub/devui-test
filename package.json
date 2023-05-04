@@ -7,6 +7,7 @@
     "build": "next build",
     "build:application": "tsx --tsconfig scripts/tsconfig.json scripts/build-application.ts",
     "build:marketing": "tsx --tsconfig scripts/tsconfig.json scripts/build-marketing.ts",
+    "build:ecommerce": "tsx --tsconfig scripts/tsconfig.json scripts/build-ecommerce.ts",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",

@@ -110,3 +110,11 @@ export const marketingComponentData: ComponentData[] = [
     href: 'testimonial',
   },
 ]
+
+export const ecommerceComponentData: ComponentData[] = [
+  {
+    title: 'Cart',
+    img: '/files/ecommerce/cart.png',
+    href: 'cart',
+  },
+]
