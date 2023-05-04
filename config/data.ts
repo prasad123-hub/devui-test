@@ -117,4 +117,9 @@ export const ecommerceComponentData: ComponentData[] = [
     img: '/files/ecommerce/cart.png',
     href: 'cart',
   },
+  {
+    title: 'Checkout',
+    img: '/files/ecommerce/checkout.png',
+    href: 'checkout',
+  },
 ]

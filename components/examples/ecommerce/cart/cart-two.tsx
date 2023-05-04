@@ -104,7 +104,7 @@ export function CartTwo() {
                       <input
                         type="text"
                         className="mx-1 h-7 w-9 rounded-md border text-center"
-                        value="1"
+                        defaultValue={1}
                       />
                       <button type="button" className="flex h-7 w-7 items-center justify-center">
                         +

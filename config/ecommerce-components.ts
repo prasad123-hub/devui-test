@@ -10,4 +10,15 @@ export const ecommerceComponents = [
     category: 'ecommerce/cart',
     directory: 'components/examples/ecommerce/cart',
   },
+  {
+    component: 'checkout',
+    name: 'Checkout',
+    files: [
+      'components/examples/ecommerce/checkout/checkout-one.tsx',
+      'components/examples/ecommerce/checkout/checkout-two.tsx',
+      'components/examples/ecommerce/checkout/checkout-three.tsx',
+    ],
+    category: 'ecommerce/checkout',
+    directory: 'components/examples/ecommerce/checkout',
+  },
 ]
