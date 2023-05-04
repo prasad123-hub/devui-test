@@ -21,4 +21,14 @@ export const ecommerceComponents = [
     category: 'ecommerce/checkout',
     directory: 'components/examples/ecommerce/checkout',
   },
+  {
+    component: 'overview',
+    name: 'Product Overview',
+    files: [
+      'components/examples/ecommerce/overview/overview-one.tsx',
+      'components/examples/ecommerce/overview/overview-two.tsx',
+    ],
+    category: 'ecommerce/overview',
+    directory: 'components/examples/ecommerce/overview',
+  },
 ]
