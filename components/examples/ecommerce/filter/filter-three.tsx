@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronDown, Filter, LayoutGrid, Plus } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 
 const filters = [
   {
