@@ -127,4 +127,9 @@ export const ecommerceComponentData: ComponentData[] = [
     img: '/files/ecommerce/overview.png',
     href: 'overview',
   },
+  {
+    title: 'Filters',
+    img: '/files/ecommerce/filter.png',
+    href: 'filter',
+  },
 ]
