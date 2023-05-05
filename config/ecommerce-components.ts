@@ -42,4 +42,15 @@ export const ecommerceComponents = [
     category: 'ecommerce/filter',
     directory: 'components/examples/ecommerce/filter',
   },
+  {
+    component: 'product',
+    name: 'Products',
+    files: [
+      'components/examples/ecommerce/product/product-one.tsx',
+      'components/examples/ecommerce/product/product-two.tsx',
+      'components/examples/ecommerce/product/product-three.tsx',
+    ],
+    category: 'ecommerce/product',
+    directory: 'components/examples/ecommerce/product',
+  },
 ]
