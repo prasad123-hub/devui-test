@@ -53,4 +53,14 @@ export const ecommerceComponents = [
     category: 'ecommerce/product',
     directory: 'components/examples/ecommerce/product',
   },
+  {
+    component: 'order',
+    name: 'Orders',
+    files: [
+      'components/examples/ecommerce/order/order-one.tsx',
+      'components/examples/ecommerce/order/order-two.tsx',
+    ],
+    category: 'ecommerce/order',
+    directory: 'components/examples/ecommerce/order',
+  },
 ]
