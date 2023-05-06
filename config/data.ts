@@ -151,6 +151,11 @@ export const pagesData: ComponentData[] = [
     href: 'about',
   },
   {
+    title: 'Contact Us Pages',
+    img: '/files/pages/about.png',
+    href: 'contact',
+  },
+  {
     title: 'Pricing Pages',
     img: '/files/pages/pricing.png',
     href: 'pricing',
