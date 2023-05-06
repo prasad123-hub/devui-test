@@ -143,3 +143,16 @@ export const ecommerceComponentData: ComponentData[] = [
     href: 'product',
   },
 ]
+
+export const pagesData: ComponentData[] = [
+  {
+    title: 'About Us Pages',
+    img: '/files/pages/about.png',
+    href: 'about',
+  },
+  {
+    title: 'Pricing Pages',
+    img: '/files/pages/pricing.png',
+    href: 'pricing',
+  },
+]

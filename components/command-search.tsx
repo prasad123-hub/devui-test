@@ -10,6 +10,7 @@ import {
   applicationComponentData,
   marketingComponentData,
   ecommerceComponentData,
+  pagesData,
 } from '@/config/data'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -98,6 +99,20 @@ export function CommandMenu({ ...props }: DialogProps) {
                 key={component.href}
                 onSelect={() => {
                   runCommand(() => router.push(`/components/${component.href}` as string))
+                }}
+              >
+                <File className="mr-2 h-4 w-4" />
+                {component.title}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+          <CommandSeparator />
+          <CommandGroup heading="Page Examples">
+            {pagesData.map((component) => (
+              <CommandItem
+                key={component.href}
+                onSelect={() => {
+                  runCommand(() => router.push(`/pages/${component.href}` as string))
                 }}
               >
                 <File className="mr-2 h-4 w-4" />
