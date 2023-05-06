@@ -22,7 +22,7 @@ export default async function IndexPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-4">
               {pagesData.map((component) => (
                 <div key={component.title} className="rounded-md p-2 hover:bg-gray-100/50">
-                  <Link href={`/components/${component.href}`}>
+                  <Link href={`/pages/${component.href}`}>
                     <div className="rounded-t-md border border-gray-200 bg-white">
                       <Image
                         src={component.img}
