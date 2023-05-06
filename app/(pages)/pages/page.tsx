@@ -2,11 +2,7 @@ import * as React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import {
-  applicationComponentData,
-  marketingComponentData,
-  ecommerceComponentData,
-} from '@/config/data'
+import { pagesData } from '@/config/data'
 
 export default async function IndexPage() {
   return (
@@ -24,7 +20,7 @@ export default async function IndexPage() {
           <hr className="my-10" />
           <div className="w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-4">
-              {applicationComponentData.map((component) => (
+              {pagesData.map((component) => (
                 <div key={component.title} className="rounded-md p-2 hover:bg-gray-100/50">
                   <Link href={`/components/${component.href}`}>
                     <div className="rounded-t-md border border-gray-200 bg-white">
@@ -37,7 +33,7 @@ export default async function IndexPage() {
                       />
                       <hr />
                       <p className="mt-2 p-2 pt-0 text-sm font-semibold text-gray-600">
-                        {component.title} components
+                        {component.title} Example
                       </p>
                     </div>
                   </Link>
@@ -45,6 +41,7 @@ export default async function IndexPage() {
               ))}
             </div>
           </div>
+          <hr className="my-16" />
         </div>
       </div>
     </>

@@ -1,32 +1,32 @@
 import { HeroBlock } from '@/components/hero-block'
 import componentsArray from '@/app/api/page-examples.json'
-import { ContactPageOne } from '@/components/examples/pages/contact/contact-page-1'
-import { ContactPageTwo } from '@/components/examples/pages/contact/contact-page-2'
+import { BlogPageOne } from '@/components/examples/pages/blog/blog-page-1'
+import { BlogPageTwo } from '@/components/examples/pages/blog/blog-page-2'
 import { ExampleProps } from '@/types'
 
-const contactPagesArray = componentsArray.filter((e) => e.category === 'pages/contact')
+const blogPagesArray = componentsArray.filter((e) => e.category === 'pages/blog')
 
 const Examples: ExampleProps[] = [
   {
-    name: 'Contact Page One',
-    htmlCode: <ContactPageOne />,
-    reactCode: `${contactPagesArray[0].files[0].content}`,
-    component: <ContactPageOne />,
+    name: 'Blog Page One',
+    htmlCode: <BlogPageOne />,
+    reactCode: `${blogPagesArray[0].files[0].content}`,
+    component: <BlogPageOne />,
     playLink: 'https://play.tailwindcss.com/gfYzC3bq7V?layout=horizontal',
   },
   {
-    name: 'Contact Page Two',
-    htmlCode: <ContactPageTwo />,
-    reactCode: `${contactPagesArray[0].files[1].content}`,
-    component: <ContactPageTwo />,
-    playLink: 'https://play.tailwindcss.com/5s1yC9DEQF?layout=horizontal',
+    name: 'Blog Page Two',
+    htmlCode: <BlogPageTwo />,
+    reactCode: `${blogPagesArray[0].files[1].content}`,
+    component: <BlogPageTwo />,
+    playLink: 'https://play.tailwindcss.com/gfYzC3bq7V?layout=horizontal',
   },
 ]
 
-export default async function ContactPages() {
+export default async function BlogPages() {
   return (
     <div className="mx-auto max-w-7xl px-3 py-8 md:py-12 lg:px-0 lg:py-14">
-      <h3 className="pb-4 font-heading text-2xl font-bold">Contact Pages</h3>
+      <h3 className="pb-4 font-heading text-2xl font-bold">Blog Pages</h3>
       <hr />
       <div className="py-8 lg:px-0">
         {Examples.map((e) => (

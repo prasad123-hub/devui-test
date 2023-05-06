@@ -147,17 +147,32 @@ export const ecommerceComponentData: ComponentData[] = [
 export const pagesData: ComponentData[] = [
   {
     title: 'About Us Pages',
-    img: '/files/pages/about.png',
+    img: '/files/pages/about-us.png',
     href: 'about',
   },
   {
+    title: 'Blog Pages',
+    img: '/files/pages/blog-page.png',
+    href: 'blog',
+  },
+  {
     title: 'Contact Us Pages',
-    img: '/files/pages/about.png',
+    img: '/files/pages/contact-us.png',
     href: 'contact',
   },
   {
+    title: 'Error Pages',
+    img: '/files/pages/error-page.png',
+    href: 'error',
+  },
+  {
+    title: 'Landing Pages',
+    img: '/files/pages/landing-page.png',
+    href: 'landing',
+  },
+  {
     title: 'Pricing Pages',
-    img: '/files/pages/pricing.png',
+    img: '/files/pages/pricing-page.png',
     href: 'pricing',
   },
 ]
