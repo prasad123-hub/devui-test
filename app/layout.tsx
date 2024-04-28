@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 
 import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
+import { ClerkProvider } from '@clerk/nextjs'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -41,17 +42,19 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body
-        className={cn(
-          'min-h-screen bg-white font-sans antialiased',
-          fontSans.variable,
-          fontHeading.variable
-        )}
-      >
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body
+          className={cn(
+            'min-h-screen bg-white font-sans antialiased',
+            fontSans.variable,
+            fontHeading.variable
+          )}
+        >
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }

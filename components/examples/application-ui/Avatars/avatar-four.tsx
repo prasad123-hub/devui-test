@@ -6,12 +6,12 @@ export function CircularAvatarStack() {
       <div className="isolate flex -space-x-2">
         <img
           className="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-          src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
           alt="Dan_Abromov"
         />
         <img
           className="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_170,w_170,f_auto,g_faces,z_0.7,b_white,q_auto:eco,dpr_1/smokhfs2uevnppc2bmwl"
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
           alt="Guillermo_Rauch"
         />
         <img
