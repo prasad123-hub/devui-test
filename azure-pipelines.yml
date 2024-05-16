@@ -16,7 +16,10 @@ steps:
     versionSpec: '18.x'
   displayName: 'Install Node.js'
 
+- script: curl -L https://unpkg.com/@pnpm/self-installer | node
+  displayName: 'Install pnpm'
+
 - script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+    pnpm install
+    pnpm run build
+  displayName: 'pnpm install and build'
